@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+}
+#logo {
+  margin: 20px 35px;
+}
+#logo img {
+  margin: 5px 8px;
+  height: 50px;
+}
+#navbar {
+  position: sticky;
+  font-family: "Poppins", sans-serif;
+  top: 0;
+}
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai 2";
+}
+// #navbar::before {
+//   content: "";
+//   background-color: black;
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//   z-index: -1;
+//   opacity: 0.57;
+// }
+#navbar ul li {
+  list-style: none;
+  font-size: 1.25em;
+}
+#navbar ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+}
+#navbar li a:hover {
+  color: black;
+  // background-color: white;
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  // padding: 10px 150px;
+  align-items: center;
+  height: 100vh;
+  background: url(../img/bg1.jpg) no-repeat center center/cover;
+  justify-content: center;
+}
+// #home::before {
+//   content: "";
+
+//   position: absolute;
+//   height: 480px;
+//   width: 100%;
+//   z-index: -1;
+//   opacity: 0.8;
+//   top: 0px;
+//   left: 0px;
+// }
+#home h1 {
+  color: white;
+  text-align: center;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+}
+
+.primary-heading {
+  font-size: 40px;
+  padding: 25px;
+}
+.btn {
+  padding: 5px 22px;
+  border: 2px solid white;
+  border-radius: 7px;
+  color: white;
+  margin: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: brown;
+}
+.center {
+  text-align: center;
+}
+#services {
+  margin: 35px;
+  display: flex;
+  margin-top: 15px;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 35px;
+  margin: 20px 50px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  background-color: #f6f6ff;
+}
+
+#services .box img {
+  height: 105px;
+  display: block;
+  margin: auto;
+}
+#services .box p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+.h-primary {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+.h-secondary {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+}
+#client-section {
+  position: relative;
+}
+#client-section::before {
+  content: "";
+  background: url(../img/bg.jpg);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+  height: 100%;
+  width: 100%;
+}
+#client-section .h-primary {
+  padding-top: 70px;
+  font-size: 40px;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+#clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#clients img {
+  height: 80px;
+}
+#client-section {
+  position: relative;
+}
+.client-item {
+  padding: 35px;
+}
+#contact {
+  position: relative;
+}
+#contact .h-primary {
+  padding-top: 20px;
+}
+#contact::before {
+  content: "";
+  background: url(../img/contact.jpg) no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+#contact-box input {
+  width: 100%;
+  padding: 0.45em;
+  border-radius: 10px;
+  font-size: 14px;
+}
+#contact-box form {
+  width: 30%;
+}
+#contact-box label {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  background: white;
+  color: #949598;
+  padding: 15px 25px;
+}
+@media screen and (max-width: 1170px) {
+  #navbar {
+    flex-direction: column;
+  }
+  #home {
+    height: 470px;
+    padding: 5px 24px;
+  }
+  #home::before {
+    height: 645px;
+  }
+  #home p {
+    font-size: 16px;
+  }
+
+  #services {
+    flex-direction: column;
+  }
+  .h-primary {
+    font-size: 35px;
+  }
+  #navbar ul li a {
+    padding: 0px 10px 35px;
+    font-size: 1rem;
+  }
+  #clients {
+    flex-wrap: wrap;
+  }
+  #clients img {
+    width: 50px;
+    height: auto;
+    padding: 4px;
+  }
+  .btn {
+    font-size: 15px;
+    padding: 6px 20px;
+  }
+  #contact-box form {
+    width: 70%;
+  }
+  #services .box {
+    padding: 25px;
+    margin: 20px 39px;
+    margin-bottom: 35px;
+  }
+  #services .box img {
+    height: 65px;
+    display: block;
+    margin: auto;
+  }
+}
